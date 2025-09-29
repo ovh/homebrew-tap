@@ -3,7 +3,7 @@ cask "ovhcloud-cli" do
   name "ovhcloud-cli"
   desc "OVHcloud CLI - Command line interface for OVHcloud."
   homepage "https://github.com/ovh/ovhcloud-cli"
-  version "0.4.0"
+  version "0.5.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -13,27 +13,23 @@ cask "ovhcloud-cli" do
 
   on_macos do
     on_intel do
-      url "https://github.com/ovh/ovhcloud-cli/releases/download/v#{version}/ovhcloud-cli_Darwin_x86_64.tar.gz",
-        using: :homebrew_curl
-      sha256 "3b5711bc4c46c6f259c3d10d2ed5502cd63c9b843e65cde830a082d9bba13ce3"
+      url "https://github.com/ovh/ovhcloud-cli/releases/download/v#{version}/ovhcloud-cli_Darwin_x86_64.tar.gz"
+      sha256 "e55870d0eb80aaed49949e138d95921245a9ed5c5a76eec5d6c092e729109150"
     end
     on_arm do
-      url "https://github.com/ovh/ovhcloud-cli/releases/download/v#{version}/ovhcloud-cli_Darwin_arm64.tar.gz",
-        using: :homebrew_curl
-      sha256 "08852b5caacdd9e63f93f095e0bcbed662fa5dd52c2adfa3f8867cec5fad25c4"
+      url "https://github.com/ovh/ovhcloud-cli/releases/download/v#{version}/ovhcloud-cli_Darwin_arm64.tar.gz"
+      sha256 "6f59d5cb026c3b0c8a84e4a8a6cc9ce09a0d0acd11cdc385e22db4e046177634"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/ovh/ovhcloud-cli/releases/download/v#{version}/ovhcloud-cli_Linux_x86_64.tar.gz",
-        using: :homebrew_curl
-      sha256 "1b225762c0c23170ecf3c2fc9c03a5801149fbe742f496ff46fa2af85fb7ff60"
+      url "https://github.com/ovh/ovhcloud-cli/releases/download/v#{version}/ovhcloud-cli_Linux_x86_64.tar.gz"
+      sha256 "a3f198f44a4e43938e0b5681b856a558d278a1af91dcd3ef1969f1be93fc95b4"
     end
     on_arm do
-      url "https://github.com/ovh/ovhcloud-cli/releases/download/v#{version}/ovhcloud-cli_Linux_arm64.tar.gz",
-        using: :homebrew_curl
-      sha256 "2ce43d508d36bf559746d97e1b69f7110be020df6a18d40e1c47efe8c2d6ac0c"
+      url "https://github.com/ovh/ovhcloud-cli/releases/download/v#{version}/ovhcloud-cli_Linux_arm64.tar.gz"
+      sha256 "5c1e12505a2e791d8e532c6a16234dbcb42af92d4d814046f946701791e95d84"
     end
   end
 
