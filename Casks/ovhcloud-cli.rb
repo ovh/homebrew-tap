@@ -3,7 +3,7 @@ cask "ovhcloud-cli" do
   name "ovhcloud-cli"
   desc "OVHcloud CLI - Command line interface for OVHcloud."
   homepage "https://github.com/ovh/ovhcloud-cli"
-  version "0.5.0"
+  version "0.6.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "ovhcloud-cli" do
   on_macos do
     on_intel do
       url "https://github.com/ovh/ovhcloud-cli/releases/download/v#{version}/ovhcloud-cli_Darwin_x86_64.tar.gz"
-      sha256 "e55870d0eb80aaed49949e138d95921245a9ed5c5a76eec5d6c092e729109150"
+      sha256 "7908e42637a3eccf8b0a5dc6f74fd9a04b4792aacae98624686b151a2cbb9b03"
     end
     on_arm do
       url "https://github.com/ovh/ovhcloud-cli/releases/download/v#{version}/ovhcloud-cli_Darwin_arm64.tar.gz"
-      sha256 "6f59d5cb026c3b0c8a84e4a8a6cc9ce09a0d0acd11cdc385e22db4e046177634"
+      sha256 "aff603bc2b504b31edf310c3649f6d99f329164c98fe5fe008ae9fd251b0ba55"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/ovh/ovhcloud-cli/releases/download/v#{version}/ovhcloud-cli_Linux_x86_64.tar.gz"
-      sha256 "a3f198f44a4e43938e0b5681b856a558d278a1af91dcd3ef1969f1be93fc95b4"
+      sha256 "52f72d55c55a9f818ec6422193495cc9e21141d9798a959e67d4f7005fe8a591"
     end
     on_arm do
       url "https://github.com/ovh/ovhcloud-cli/releases/download/v#{version}/ovhcloud-cli_Linux_arm64.tar.gz"
-      sha256 "5c1e12505a2e791d8e532c6a16234dbcb42af92d4d814046f946701791e95d84"
+      sha256 "48aeb2d765219877c86905e45c53271f90a5c7371332f57a800399b70c798bd3"
     end
   end
 
